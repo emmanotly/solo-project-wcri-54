@@ -8,6 +8,11 @@ app.use(express.urlencoded());
 
 // connect a database
 
+// require the path to the index.html
+/*  app.get('/', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/index.html'));
+}); */
+
 // require paths to my middleware
 
 // define routers for middleware
@@ -24,3 +29,8 @@ app.use((err, req, res, next) => {
   res.status(500).send({ error: err });
 });
 
+// add listener
+app.listen(PORT, () => {console.log(`Listening on port ${PORT}...`)});
+
+// export app
+module.exports = app;
