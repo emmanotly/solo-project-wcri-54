@@ -37,6 +37,7 @@ module.exports = {
           },
       },
     plugins: [new htmlPlugin({
-        template: './index.html'
+      // might not need the /client/ pathway
+        template: './client/index.html'
     })],
 }

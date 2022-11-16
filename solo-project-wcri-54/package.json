@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server/server.js"
   },
   "nodemonConfig": {
     "ignore": [

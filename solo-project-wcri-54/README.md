@@ -1,6 +1,7 @@
-Emma Ferguson's Solo Project
-For Codesmith's WCRI 54
+*** Emma Ferguson's Solo Project ***
+*** Codesmith WCRI 54 ***
 
+*** An Introduction: ***
 Welcome to my attempt at a revival of a dupe for our beloved classic Yik Yak!
 
 Yik Yak, before its recent official revival with new and updated features, was a simple social media platform popular among college students.
@@ -41,4 +42,10 @@ The simple days of classic Yik Yak allowed users to connect and share some laugh
   b) the first response should a `GET` request be for the `/` endpoint and respond by sending the file, and resolving the path to the `index.html` file
   c) the second router should handle the `POST` request made by the client to submit and display the client's anonymous posts
   d) the third router should handle the `PATCH` request in the event that the client upvotes or downvotes a post
-  
+7. Make `server` and `client` folders:
+  a) move `server.js` into the `server` folder
+  b) create a `controllers.js` file in the `server` folder as a file for middleware
+  c) move the `index.html` file into the `client` folder
+  d) later on, a `styles.css` file will go into this forlder, along with a `react.jsx` file
+8. Work on the middleware; the middleware should match up with the functionality of its perspective server routers and react fetch requests:
+  a) the first middleware should 
