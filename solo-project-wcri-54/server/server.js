@@ -7,7 +7,7 @@ const app = express();
 const mongoose = require('mongoose');
 // require .env and create the path to accesss the actual database
 const dotenv = require('dotenv');
-dotenv.config({ path: '/.config.env'});
+dotenv.config({ path: './config.env' });
 
 app.use(express.json());
 app.use(express.urlencoded());
@@ -17,7 +17,7 @@ const DB = process.env.DATABASE;
 
 // connect mongoose to the database
 mongoose.connect(DB).then(() => {
-  console.log('db is connected');
+  console.log('Database is connected');
 });
 
 // require the path to the index.html
