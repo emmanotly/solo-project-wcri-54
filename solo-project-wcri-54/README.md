@@ -47,5 +47,12 @@ The simple days of classic Yik Yak allowed users to connect and share some laugh
   b) create a `controllers.js` file in the `server` folder as a file for middleware
   c) move the `index.html` file into the `client` folder
   d) later on, a `styles.css` file will go into this forlder, along with a `react.jsx` file
-8. Work on the middleware; the middleware should match up with the functionality of its perspective server routers and react fetch requests:
-  a) the first middleware should 
+8. Set up a database:
+  a) it's good practice to not store sensitive information where it will be public to anyone looking at the GitHub repo once committed and pushed, so to accomplish this, create a `.gitignore` file
+  b) add the `node-modules` folder to `.gitignore`
+  c) create a `db.js` file
+    - add the `db.js` file to the `.gitignore` file
+  d) declare a `model.js` file that will hold the schema for the mongoDB database
+    - 
+9. Work on the middleware; the middleware should match up with the functionality of its perspective server routers and react fetch requests:
+  a) the middleware file should require the `model` file holding the schema for the database
