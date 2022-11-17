@@ -52,7 +52,13 @@ The simple days of classic Yik Yak allowed users to connect and share some laugh
   b) add the `node-modules` folder to `.gitignore`
   c) create a `db.js` file
     - add the `db.js` file to the `.gitignore` file
-  d) declare a `model.js` file that will hold the schema for the mongoDB database
-    - 
+  d) declare a `model.js` file that will hold the schema and model for the mongoDB database
+    - Schema: 
+      * username, required
+      * password, required
+      * school, required
+    - Model:
+      * declare a variable and assign it to the invocation of mongoose's `.model` method, passing in the variable label as a sting and the schema variable
+    - export the model
 9. Work on the middleware; the middleware should match up with the functionality of its perspective server routers and react fetch requests:
   a) the middleware file should require the `model` file holding the schema for the database
