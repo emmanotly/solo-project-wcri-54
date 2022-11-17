@@ -22,8 +22,18 @@ mongoose.connect(DB).then(() => {
 
 // require the path to the index.html
 /*  app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client/index.html'));
+  res.sendFile(path.resolve(__dirname, './client/index.html'));
 }); */
+
+// path to the home login page
+app.get('/', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/index.html'));
+});
+
+// path to the signup page
+app.get('/signup/', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/signup.html'));
+});
 
 // require paths to my middleware
 
