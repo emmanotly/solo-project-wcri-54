@@ -14,15 +14,33 @@
   </div>
   <div class="login">
     <h4>login</h4>
-    <label for="username">username</label>
-    <input type="text" name="username" required>
-    <label for="psw">password</label>
-    <input type="password" placeholder="password" name="psw" required>
-    <button type="submit">login</button>
+    <form action="POST" >
+      <label for="username">username</label>
+      <input type="text" name="username" required>
+      <label for="psw">password</label>
+      <input type="password" placeholder="password" name="psw" required>
+      <input type="submit" value="login">
+      <!-- <button type="submit">login</button> -->
+    </form>
+  </div>
+  <div id="app">
+    <h4>don't have an account?</h4>
+    <!-- <form action="GET" action='/signup'></form> -->
+    <!-- <a class="signupbutton" href="./signup/">sign up</a> -->
+    <!-- <button  onclick="href='./signup/'">sign up</button> -->
+    <form action="./signup">
+      <input type="submit" value="sign up">
+    </form>
   </div>
   <div>
-    <h4>don't have an account?</h4>
-    <button onclick="href='./signup/'">sign up</button>
+    <form action="./app">
+      <input type="submit" value="click this tho">
+    </form>
+    <!-- <h1>there should be a picture here</h1>
+    <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1455559319/kidfmw7mf4citirwzu6r.png" alt=""> -->
   </div>
+  
 </body>
 </html>
+
+

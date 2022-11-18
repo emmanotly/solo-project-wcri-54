@@ -35,6 +35,11 @@ app.get('/signup/', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/signup.html'));
 });
 
+// path to app page
+app.get('/app/', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/app.html'));
+});
+
 // require paths to my middleware
 
 // define routers for middleware
